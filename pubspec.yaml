@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   pin_code_fields: ^7.3.0
+  hive:
+  hive_flutter:
   get: 
 
 dev_dependencies:
