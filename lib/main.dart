@@ -19,6 +19,6 @@ class OquApp extends StatelessWidget {
         defaultTransition: Transition.fade,
         unknownRoute: AppPages.pages[0],
         getPages: AppPages.pages,
-    )
+    );
     }
   }
