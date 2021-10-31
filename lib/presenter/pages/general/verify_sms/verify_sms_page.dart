@@ -24,11 +24,14 @@ class VerifySmsPage extends GetView<VerifySmsController> {
                     textAlign: TextAlign.center),
                 const SizedBox(height: 18.0),
                 PinCodeTextField(
+
                   appContext: context,
                   length: 4,
                   textStyle: Theme.of(context).textTheme.subtitle1!.copyWith(color: Colors.white),
                   enableActiveFill: true,
                   onChanged: (pincode) => {},
+                  onCompleted: (pincode) => {},
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   pinTheme: PinTheme(
                     shape: PinCodeFieldShape.box,
                     borderRadius: BorderRadius.circular(10.0),

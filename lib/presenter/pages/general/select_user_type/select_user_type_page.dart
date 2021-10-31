@@ -8,16 +8,20 @@ class SelectUserTypePage extends GetView<SelectUserTypeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('SelectUserTypePage')),
+        appBar: AppBar(title: Text('Выберите тип пользователя')),
         body: SafeArea(
           child: Column(
-            children: [
-              ElevatedButton(onPressed: () => Get.toNamed(Routes.STUDENT_HOME), child: Text('Студент')),
-              const SizedBox(height: 12.0),
-              ElevatedButton(onPressed: () => Get.toNamed(Routes.TUTOR_HOME), child: Text('Преподаватель')),
-            ],
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                  onPressed: () => Get.offNamedUntil(Routes.STUDENT_HOME,(route) => false),
+                  child: Text('Студент')),
+              const SizedBox(height: 12.0),
+              ElevatedButton(
+                  onPressed: () => Get.offNamedUntil(Routes.TUTOR_HOME,(route) => false),
+                  child: Text('Преподаватель')),
+            ],
           ),
         ));
   }

@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oqukz/internal/app_module.dart';
+import 'package:oqukz/presenter/pages/student/student_home_controller.dart';
 import 'package:oqukz/presenter/utils/routes/app_pages.dart';
 
 void main() async {
@@ -15,8 +17,10 @@ class OquApp extends StatelessWidget {
     Widget build(BuildContext context) {
       return GetMaterialApp(
         debugShowCheckedModeBanner: false,
+        // initialBinding: Bindings
+        title: 'Oqu.kz',
         initialRoute: Routes.WELCOME,
-        defaultTransition: Transition.fade,
+        defaultTransition: Transition.cupertino,
         unknownRoute: AppPages.pages[0],
         getPages: AppPages.pages,
     );
