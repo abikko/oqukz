@@ -8,9 +8,9 @@ class LoadingWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if(GetPlatform.isIOS){
-      return const CupertinoActivityIndicator();
+      return const Center(child: CupertinoActivityIndicator());
     }else{
-      return const CircularProgressIndicator();
+      return const Center(child: CircularProgressIndicator());
     }
   }
 }

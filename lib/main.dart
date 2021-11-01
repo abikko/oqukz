@@ -6,6 +6,7 @@ import 'package:oqukz/internal/network_module.dart';
 import 'package:oqukz/presenter/utils/routes/app_pages.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await initNetworkModule();
   await initAppModule();
   runApp(const OquApp());

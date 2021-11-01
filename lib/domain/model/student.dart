@@ -12,6 +12,8 @@ class Student{
   List<User>? favorites;//favorite tutors.
   List<Order>? acceptedRequests; //active at the moment.
 
+  Student();
+
 
   factory Student.fromJson(Map<String,dynamic> json) => _$StudentFromJson(json);
 
