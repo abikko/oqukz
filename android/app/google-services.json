@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1070216200169",
+    "project_id": "oqukz-74f1b",
+    "storage_bucket": "oqukz-74f1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070216200169:android:436762bcb59c286fb01578",
+        "android_client_info": {
+          "package_name": "com.example.oqukz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070216200169-t1rc1gk1kagpk02hdf7sdiidrir6due5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhu5LRaq_FLfytMIR3KuBDqpq6l34uU6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070216200169-t1rc1gk1kagpk02hdf7sdiidrir6due5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

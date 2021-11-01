@@ -1,8 +1,11 @@
 import 'package:get/get.dart';
 
 class SelectUserTypeController extends GetxController {
+  final isLoading = true.obs;
 
-  final _obj = ''.obs;
-  set obj(value) => this._obj.value = value;
-  get obj => this._obj.value;
+@override
+  void onInit() {
+    
+    super.onInit();
+  } 
 }

@@ -6,6 +6,8 @@ import 'package:oqukz/presenter/widgets/text_field/oqu_text_field.dart';
 import 'send_sms_controller.dart';
 
 class SendSmsPage extends GetView<SendSmsController> {
+  const SendSmsPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

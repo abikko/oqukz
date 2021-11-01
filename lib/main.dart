@@ -2,10 +2,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oqukz/internal/app_module.dart';
-import 'package:oqukz/presenter/pages/student/student_home_controller.dart';
+import 'package:oqukz/internal/network_module.dart';
 import 'package:oqukz/presenter/utils/routes/app_pages.dart';
 
 void main() async {
+  await initNetworkModule();
   await initAppModule();
   runApp(const OquApp());
 }
