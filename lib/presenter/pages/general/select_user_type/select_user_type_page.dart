@@ -10,6 +10,7 @@ class SelectUserTypePage extends GetView<SelectUserTypeController> {
 
   @override
   Widget build(BuildContext context) {
+    controller.createUser();
     return Scaffold(
       appBar: AppBar(title: Text('Выберите тип пользователя')),
       body: SafeArea(
@@ -17,6 +18,7 @@ class SelectUserTypePage extends GetView<SelectUserTypeController> {
           () => controller.isLoading.value
               ? const LoadingWidget()
               : Column(
+                mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [

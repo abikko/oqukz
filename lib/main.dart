@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oqukz/internal/app_module.dart';
 import 'package:oqukz/internal/network_module.dart';
+import 'package:oqukz/presenter/pages/general/soon/soon_page.dart';
 import 'package:oqukz/presenter/utils/routes/app_pages.dart';
 
 void main() async {
@@ -21,9 +22,9 @@ class OquApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         // initialBinding: Bindings
         title: 'Oqu.kz',
-        initialRoute: Routes.WELCOME,
+        initialRoute: Routes.TUTOR_HOME,
         defaultTransition: Transition.cupertino,
-        unknownRoute: AppPages.pages[0],
+        unknownRoute: GetPage(name: Routes.LATER, page:()=> SoonPage()),
         getPages: AppPages.pages,
     );
     }

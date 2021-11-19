@@ -12,7 +12,7 @@ class Tutor {
   List<Order>? acceptedRequests; //active at the moment.
 
   Tutor();
-
+  
 
   factory Tutor.fromJson(Map<String,dynamic> json) => _$TutorFromJson(json);
 

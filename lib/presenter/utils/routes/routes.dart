@@ -2,6 +2,7 @@ part of './app_pages.dart';
 abstract class Routes{
 
   static const INITIAL = '/';
+  static const LATER = '/unknown';
   static const WELCOME = '/welcome';
   static const SEND_SMS_CODE = '/send_sms_code';
   static const VERIFY_SMS_CODE = '/verify_sms_code';

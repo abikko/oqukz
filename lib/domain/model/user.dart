@@ -19,19 +19,19 @@ class User{
 
   get getPhone => phone;
 
- set setPhone( phone) => phone = phone;
+ set setPhone(String phone) => this.phone = phone.replaceAll('()+ ', '');
 
   get getUsername => username;
 
- set setUsername( username) => username = username;
+ set setUsername(String username) => this.username = username;
 
   get getStudent => student;
 
  set setStudent( student) => student = student;
 
-  get getTutor => tutor;
+ Tutor get getTutor => tutor;
 
  set setTutor( tutor) => tutor = tutor;
 
-  User.newUser(this.phone,this.username) : student = Student(), tutor = Tutor();
+  User.newUser(this.phone,this.username) : this.tutor = Tutor(), this.student = Student();
 }

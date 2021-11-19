@@ -4,6 +4,7 @@ import 'package:oqukz/presenter/pages/general/send_sms/send_sms_page.dart';
 import 'package:oqukz/presenter/pages/general/verify_sms/verify_sms_page.dart';
 import 'package:oqukz/presenter/pages/general/welcome/welcome_page.dart';
 import 'package:oqukz/presenter/pages/student/student_home_page.dart';
+import 'package:oqukz/presenter/pages/tutor/tutor_home_page.dart';
 part 'routes.dart';
 
 abstract class AppPages {
@@ -14,5 +15,6 @@ abstract class AppPages {
     GetPage(name: Routes.VERIFY_SMS_CODE, page:()=> VerifySmsPage(),),
     GetPage(name: Routes.SELECT_USER_TYPE, page:()=> SelectUserTypePage(),),
     GetPage(name: Routes.STUDENT_HOME, page:()=> StudentHomePage(),),
+    GetPage(name: Routes.TUTOR_HOME,page: () => TutorHomePage(),),
   ];
 }

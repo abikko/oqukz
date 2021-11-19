@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:oqukz/presenter/widgets/grid_view/profile_progress_item.dart';
 
-class StudentProfilePage extends StatelessWidget {
-  const StudentProfilePage({Key? key}) : super(key: key);
+import 'tutor_profile_controller.dart';
+
+class TutorProfilePage extends GetView<TutorProfileController> {
+  const TutorProfilePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

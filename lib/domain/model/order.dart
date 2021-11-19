@@ -18,5 +18,5 @@ class Order{
   Map<String,dynamic> toJson() => _$OrderToJson(this);
 
 
-  Order(this.studentName, this.lesson) : phone = "";
+  Order(this.studentName, this.lesson,{this.address,this.phone = "",this.price,this.topic,this.orderId});
 }
